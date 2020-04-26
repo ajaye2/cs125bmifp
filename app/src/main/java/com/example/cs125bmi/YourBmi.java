@@ -27,12 +27,14 @@ public class YourBmi extends AppCompatActivity {
             message.setText(R.string.message);
         }
 
-        c = findViewById(R.id.button2);
+        c = findViewById(R.id.button3);
         c.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), ChooseFoodPreferences.class);
                 startActivity(i);
             }
         });
+
+
     }
 }
