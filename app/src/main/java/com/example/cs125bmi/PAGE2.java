@@ -9,30 +9,24 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class PAGE2 extends AppCompatActivity {
-    //private EditText height;
-    //private EditText weight;
-    //private EditText age;
+    private EditText height;
+    private EditText weight;
+    private EditText age;
     private Button bmiCalculate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
 
-        //height = findViewById(R.id.editTextH);
-        //weight = findViewById(R.id.editTextW);
-        //age = findViewById(R.id.editTextA);
+        height = findViewById(R.id.editTextH);
+        weight = findViewById(R.id.editTextW);
+        age = findViewById(R.id.editTextA);
 
         bmiCalculate = findViewById(R.id.button2);
         bmiCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openPage();
-            }
-        });
-
-
-
-/*
                 double h = Double.parseDouble(height.getText().toString());
                 double w = Double.parseDouble(weight.getText().toString());
                 int a = Integer.parseInt(age.getText().toString());
@@ -41,9 +35,8 @@ public class PAGE2 extends AppCompatActivity {
                 }
 
                 YourBmi.bmi = (h / w) * 703;
-
- */
-
+            }
+        });
     }
 
     public void openPage() {

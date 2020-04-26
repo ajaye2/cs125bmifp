@@ -21,7 +21,7 @@ public class YourBmi extends AppCompatActivity {
         setContentView(R.layout.activity_your_bmi);
 
         message = findViewById(R.id.textView7);
-        if (true) {
+        if (ageCheck) {
             message.setText(R.string.message);
         } else {
             message.setText(R.string.message);
