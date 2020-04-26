@@ -10,5 +10,6 @@
     <string name="InstructionForChoose">Choose The Foods That "You'd" Like</string>
     <string name="FinalIntroduction">Based on your BMI and food preferences we recommend the following diet: </string>
     <string name="MoreInfo">For more information click the following link: </string>
+    <string name="FirstPageBmi"> Click on continue to calculate you BMI</string>
 </resources>
 
