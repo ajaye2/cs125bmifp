@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CS125BMI</string>
+    <string name="message">BMI Diet</string>
+    <string name="action_settings">Settings</string>
+    <string name="Continue">Continue</string>
+    <string name="Banana">Banana</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Dinner">Dinner</string>
+    <string name="InstructionForChoose">Choose The Foods That "You'd" Like</string>
+    <string name="FinalIntroduction">Based on your BMI and food preferences we recommend the following diet: </string>
+    <string name="MoreInfo">For more information click the following link: </string>
+</resources>
+
