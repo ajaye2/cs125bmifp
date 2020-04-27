@@ -30,23 +30,24 @@ public class PAGE2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String n = name.getText().toString();
-                double h = Double.parseDouble(height.getText().toString());
-                double w = Double.parseDouble(weight.getText().toString());
-                int a = Integer.parseInt(age.getText().toString());
-
-                if (n == null || n.length() == 0) {
+                String he = height.getText().toString();
+                String we = weight.getText().toString();
+                String ag = age.getText().toString();
+                if (n == null || n.length() == 0 || he == null || we == null
+                        || we.length() == 0 || he.length() == 0 || ag == null || ag.length() == 0) {
                     Snackbar.make(view, "You must enter data in every field.",
                             Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
-                } else if (a < 18) {
+                } else if (ag != null  && ag.length() != 0 && Integer.parseInt(ag) < 18) {
                     Snackbar.make(view, "You must be at least 18 years of age to continue.",
                             Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 } else {
+                    Double h = Double.parseDouble(he);
+                    Double w = Double.parseDouble(we);
+                    YourBmi.bmi = (703 * w) / (h * h);
                     openPage();
                 }
-
-                YourBmi.bmi = (h / w) * 703;
             }
         });
     }
