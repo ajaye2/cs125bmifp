@@ -11,16 +11,32 @@ public class FinalPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_page);
-        String bDiet = ChooseFoodPreferences.breakfast.get(0) + " for breakfast.";
-        TextView b = findViewById(R.id.breakfastDiet);
-        b.setText(bDiet);
+        if (YourBmi.high) {
+            String bDiet = ChooseFoodPreferences.breakfast.get(0) + " for breakfast.";
+            TextView b = findViewById(R.id.breakfastDiet);
+            b.setText(bDiet);
 
-        String lDiet = ChooseFoodPreferences.lunch.get(0) + " for lunch ";
-        TextView l = findViewById(R.id.lunchDiet);
-        l.setText(lDiet);
+            String lDiet = ChooseFoodPreferences.lunch.get(0) + " for lunch ";
+            TextView l = findViewById(R.id.lunchDiet);
+            l.setText(lDiet);
 
-        String dDiet = "And " + ChooseFoodPreferences.dinner.get(0) + " for dinner.";
-        TextView d = findViewById(R.id.dinnerDiet);
-        d.setText(dDiet);
+            String dDiet = "And " + ChooseFoodPreferences.dinner.get(0) + " for dinner.";
+            TextView d = findViewById(R.id.dinnerDiet);
+            d.setText(dDiet);
+        } else {
+            String bDiet = LowBmiFoodPref.breakfast.get(0) + " for breakfast.";
+            TextView b = findViewById(R.id.breakfastDiet);
+            b.setText(bDiet);
+
+            String lDiet = LowBmiFoodPref.lunch.get(0) + " for lunch ";
+            TextView l = findViewById(R.id.lunchDiet);
+            l.setText(lDiet);
+
+            String dDiet = "And " + LowBmiFoodPref.dinner.get(0) + " for dinner.";
+            TextView d = findViewById(R.id.dinnerDiet);
+            d.setText(dDiet);
+        }
+
+
     }
 }

@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChooseFoodPreferences extends AppCompatActivity {
+public class LowBmiFoodPref extends AppCompatActivity {
     static List<String> breakfast = new ArrayList<>();
     static List<String> lunch = new ArrayList<>();
     static List<String> dinner = new ArrayList<>();
@@ -25,7 +25,8 @@ public class ChooseFoodPreferences extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_food_preferences);
+        setContentView(R.layout.activity_low_bmi_food_pref);
+
 
         breakfast1 = findViewById(R.id.breakfast1);
         breakfast1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

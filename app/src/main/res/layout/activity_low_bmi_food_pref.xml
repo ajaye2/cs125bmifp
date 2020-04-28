@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LowBmiFoodPref">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="512dp"
+        android:text="@string/Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/breakfast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:text="Banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/breakfast2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:text="@string/Banana"
+        app:layout_constraintBottom_toBottomOf="@+id/breakfast3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/breakfast3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/lunch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="110dp"
+        android:text="Apple"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/breakfast1"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <CheckBox
+        android:id="@+id/breakfast3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:text="White Chicken"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/InstructionForChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/InstructionForChoose"
+        app:layout_constraintBottom_toTopOf="@+id/breakfast2"
+        app:layout_constraintStart_toEndOf="@+id/breakfast1" />
+
+    <TextView
+        android:id="@+id/Breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/Breakfast"
+        app:layout_constraintBottom_toTopOf="@+id/breakfast3"
+        app:layout_constraintStart_toStartOf="@+id/breakfast3" />
+
+    <TextView
+        android:id="@+id/Lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Lunch"
+        app:layout_constraintBottom_toTopOf="@+id/lunch1"
+        app:layout_constraintStart_toStartOf="@+id/breakfast3" />
+
+    <TextView
+        android:id="@+id/Dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/Dinner"
+        app:layout_constraintStart_toStartOf="@+id/lunch5"
+        app:layout_constraintTop_toBottomOf="@+id/lunch5" />
+
+    <CheckBox
+        android:id="@+id/lunch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lunch1"
+        app:layout_constraintEnd_toEndOf="@+id/Lunch"
+        app:layout_constraintStart_toEndOf="@+id/Lunch" />
+
+    <CheckBox
+        android:id="@+id/lunch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dp"
+        android:text="CheckBox2"
+        app:layout_constraintStart_toEndOf="@+id/lunch2"
+        app:layout_constraintTop_toTopOf="@+id/lunch2" />
+
+    <CheckBox
+        android:id="@+id/lunch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:text="CheckBox3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunch1" />
+
+    <CheckBox
+        android:id="@+id/lunch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="CheckBox4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lunch6"
+        app:layout_constraintEnd_toStartOf="@+id/lunch6" />
+
+    <CheckBox
+        android:id="@+id/lunch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="23dp"
+        android:text="CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/lunch3"
+        app:layout_constraintTop_toBottomOf="@+id/lunch3" />
+
+    <CheckBox
+        android:id="@+id/dinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="8dp"
+        android:text="CheckBodf"
+        app:layout_constraintBottom_toBottomOf="@+id/dinner2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/dinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Check"
+        app:layout_constraintEnd_toStartOf="@+id/dinner3"
+        app:layout_constraintTop_toBottomOf="@+id/Dinner" />
+
+    <CheckBox
+        android:id="@+id/dinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="chdfedfe"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dinner2"
+        app:layout_constraintStart_toEndOf="@+id/lunch5" />
+
+    <CheckBox
+        android:id="@+id/dinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="39dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinner1" />
+
+    <CheckBox
+        android:id="@+id/dinner5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/dinner6"
+        app:layout_constraintTop_toTopOf="@+id/dinner4" />
+
+    <CheckBox
+        android:id="@+id/dinner6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dinner5"
+        app:layout_constraintStart_toEndOf="@+id/dinner2" />
+
+    <CheckBox
+        android:id="@+id/breakfast4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="sfcd"
+        app:layout_constraintEnd_toStartOf="@+id/breakfast5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast1" />
+
+    <CheckBox
+        android:id="@+id/breakfast5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/breakfast6"
+        app:layout_constraintStart_toEndOf="@+id/breakfast4"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast3" />
+
+    <CheckBox
+        android:id="@+id/breakfast6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/breakfast5"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
