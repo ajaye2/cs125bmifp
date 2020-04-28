@@ -13,5 +13,11 @@
     <string name="FirstPageBmi"> Click on continue to calculate you BMI</string>
     <string name="YourBmi">Your BMI is </string>
     <string name="ContinueForDiet">"Click continue to create a diet."</string>
+    <string name="break1">Chocolate Banana Nut Shake</string>
+    <string name="break2">Vanilla Berry Shake</string>
+    <string name="break3">Chocolate Hazelnut Shake</string>
+    <string name="break4">Caramel Apple Shake</string>
+    <string name="break5"> Vanilla blueberry shake</string>
+    <string name="break6"> Super green shake</string>
 </resources>
 

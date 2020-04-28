@@ -63,7 +63,5 @@ public class YourBmi extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 }
