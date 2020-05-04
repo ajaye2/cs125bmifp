@@ -20,10 +20,22 @@ public class MainActivity extends AppCompatActivity {
                openFinalPage();
             }
         });
+
+        Button b = findViewById(R.id.button5);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open();
+            }
+        });
     }
 
     public void openFinalPage() {
         Intent intent = new Intent(this, PAGE2.class);
+        startActivity(intent);
+    }
+    public void open() {
+        Intent intent = new Intent(this, GenerateRecipe.class);
         startActivity(intent);
     }
 }

@@ -36,7 +36,5 @@ public class FinalPage extends AppCompatActivity {
             TextView d = findViewById(R.id.dinnerDiet);
             d.setText(dDiet);
         }
-
-
     }
 }
