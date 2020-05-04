@@ -70,25 +70,14 @@ public class GenerateRecipe extends AppCompatActivity {
         }
 
         String selectedDiet = diet.getSelectedItem().toString();
-        //other method of getting selected diet
-        /*
-        diet.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String a = (String) adapterView.getItemAtPosition(i);
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-        */
         String url = "https://api.spoonacular.com/mealplanner/generate?" +
                 "apiKey=9035f8bbc70447948521e40746228bf8" +
-                "&timeFrame=week" +
+                "&timeFrame=week";
+        /*+
                 "&exclude=" + pass +
                 "&diet=" + selectedDiet;
+         */
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -96,7 +85,9 @@ public class GenerateRecipe extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            JSONArray array = response.getJSONArray("meals");
+                            JSONArray array = response.getJSONArray("week");
+                            TextView a = findViewById(R.id.textView9);
+                            a.setText("dFV");
                            // String title = array.getString(0);
                             //textView.setText(title);
                         } catch (JSONException e) {
