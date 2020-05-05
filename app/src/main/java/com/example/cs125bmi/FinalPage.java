@@ -25,16 +25,7 @@ public class FinalPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_page);
 
-
-
-        JSONObject week = GenerateRecipe.week;
-        JSONObject monday = GenerateRecipe.monday;
-        JSONObject tuesday = GenerateRecipe.tuesday;
-        JSONObject wednesday = GenerateRecipe.wednesday;
-        JSONObject thursday = GenerateRecipe.thursday;
-        JSONObject friday = GenerateRecipe.friday;
-        JSONObject saturday = GenerateRecipe.saturday;
-        JSONObject sunday = GenerateRecipe.sunday;
+        
 
 
         System.out.println(" text2 " + me);
