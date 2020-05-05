@@ -20,10 +20,13 @@ public class MainActivity extends AppCompatActivity {
                openFinalPage();
             }
         });
+
+
     }
 
     public void openFinalPage() {
         Intent intent = new Intent(this, PAGE2.class);
         startActivity(intent);
     }
+
 }

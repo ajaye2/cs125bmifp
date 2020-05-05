@@ -19,5 +19,17 @@
     <string name="break4">Caramel Apple Shake</string>
     <string name="break5"> Vanilla blueberry shake</string>
     <string name="break6"> Super green shake</string>
+    <string-array name="dietList">
+        <item>Gluten Free</item>
+        <item>Ketogenic</item>
+        <item>Vegetarian</item>
+        <item>Lacto-Vegentarian</item>
+        <item>Ovo-Vegetarian</item>
+        <item>Vegan</item>
+        <item>Pescetarian</item>
+        <item>Paleo</item>
+        <item>Primal</item>
+    </string-array>
+    <string name="allergy">Enter Allergies (Separate with space)</string>
 </resources>
 
