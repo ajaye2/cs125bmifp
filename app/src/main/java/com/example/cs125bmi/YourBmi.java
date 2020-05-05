@@ -54,6 +54,9 @@ public class YourBmi extends AppCompatActivity {
         }
         c.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), GenerateRecipe.class);
+                startActivity(i);
+                /*
                 if (high) {
                     Intent i = new Intent(getApplicationContext(), ChooseFoodPreferences.class);
                     startActivity(i);
@@ -61,6 +64,8 @@ public class YourBmi extends AppCompatActivity {
                     Intent a = new Intent(getApplicationContext(), LowBmiFoodPref.class);
                     startActivity(a);
                 }
+
+                 */
             }
         });
     }
